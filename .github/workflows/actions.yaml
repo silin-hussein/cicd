@@ -13,5 +13,6 @@ jobs:
           cache: 'maven'
           cache-dependency-path: 'sub-project/pom.xml'
       - name: Build with Maven
+        working-directory: cicd
         run: mvn -B package --file pom.xml
       
